@@ -5,7 +5,7 @@ import Animations from "../../utilities/Animations";
 import "./AboutMe.css";
 
 export default function AboutMe(props) {
-  
+
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
@@ -15,10 +15,10 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-      "E&P Data Specialist with Physics and Geophysics background. Have a small business in duck and sheep. An enthusiast for new technology and development. ",
+      "Hi all, I'm My Xuyen, you can call me Snowy, the reason I got this nickname is because I like snow. I'm 19 years old, my major is logistics and supply chain management, I'm currently studying in HCMUTE. ​Welcome all you guys come to my website, this is a place to share my thoughts, my experiences and other interesting things.",
     highlights: {
       bullets: [
-        "Building ETL Solutions",
+        "Tam Quan gate",
         "SQL & No-SQL Database Development",
         "G&G Technical Applications",
         "GIS Web Development and Analysis",
@@ -29,12 +29,12 @@ export default function AboutMe(props) {
     },
   };
   const renderHighlight = () => {
-    return( 
+    return (
       SCREEN_CONSTSANTS.highlights.bullets.map((value, i) => (
-      <div className="highlight " key={i}>
-        <div className="highlight-blob "></div>
-        <span>{value}</span>
-      </div>
+        <div className="highlight " key={i}>
+          <div className="highlight-blob "></div>
+          <span>{value}</span>
+        </div>
       ))
     )
   };
@@ -50,7 +50,7 @@ export default function AboutMe(props) {
           <div className="about-me-profile "></div>
           <div className="about-me-details ">
             <span className="about-me-description ">
-              {SCREEN_CONSTSANTS.description}
+              Hi all, I'm My Xuyen, you can call me Snowy, the reason I got this nickname is because I like snow. <br />I'm 19 years old, my major is logistics and supply chain management, I'm currently studying in HCMUTE. <br />​Welcome all you guys come to my website, this is a place to share my thoughts, my experiences and other interesting things.
             </span>
             <div className="about-me-highlights ">
               <div className="highlight-heading ">
@@ -59,12 +59,32 @@ export default function AboutMe(props) {
               {renderHighlight()}
             </div>
             <div className="about-me-options ">
-            <button className="btn primary-btn"
-                        onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
-                    > Let's Discuss! </button>
+              <button className="btn primary-btn"
+                onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
+              > Let's contact! </button>
               <a href="My_CV_2_0.pdf" download="My Portfolio.pdf">
                 <button className="btn highlighted-btn ">Get Portfolio</button>
               </a>
+            </div>
+          </div>
+        </div>
+        <div className="wrapper-custom">
+          <div className="about-me-card-custom">
+            <div className="about-me-details ">
+              <h5><a href="https://vi.wikipedia.org/wiki/C%E1%BB%95ng_tam_quan">Tam Quan gate</a></h5>
+              <span className="about-me-description ">
+                I am a western girl, born and raised in Kien Giang - a coastal province in the Mekong Delta. One of the typical images of Kien Giang is the Tam Quan gate
+              </span>
+            </div>
+            <div className="about-me-profile custom-1"></div>
+          </div>
+          <div className="about-me-card">
+            <div className="about-me-profile custom-2"></div>
+            <div className="about-me-details ">
+              <h5><a href="https://vi.wikipedia.org/wiki/Phú_Quốc">Phu Quoc Island</a></h5>
+              <span className="about-me-description ">
+                When referring to Kien Giang, almost everyone will know about Phu Quoc Island - a place that is fondly called a tourist paradise.
+              </span>
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ export default function Profile() {
                     <div className="profile-details-name">
                         <span className='primary-text'>
                             {" "}
-                            Hello, I'm <span className="highlighted-text">Raditia</span>
+                            Hello, I'm <span className="highlighted-text">My Xuyen</span>
                         </span>
                     </div>
                     <div className="profile-details-role">
@@ -32,20 +32,15 @@ export default function Profile() {
                                 <Typical
                                 loop={Infinity}
                                 steps={[
-                                    "Enthusiastic Technology",
+                                    "Enthusiastic",
                                     1000,
-                                    "E&P Data Specialist",
+                                    "Logistics & Supply chain",
                                     1000,
-                                    "Machine Learning Learner",
+                                    "Technology & Education",
                                     1000,
-                                    "Enthusiastic Back-End Tech.",
+                                    "Chinese Language",
                                     1000,
-                                    "Graduated Geophysics",
-                                    1000,
-                                    "Database Specialist",
-                                    1000,
-                                    "Graduated Physics",
-                                    1000,
+                                    "SPKT"
                                 ]}
                                 />
                             </h1>

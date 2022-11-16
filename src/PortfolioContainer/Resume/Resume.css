@@ -78,11 +78,14 @@
 }
 .resume-screen-container{
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     height: 360px;
     width: 100%;
 }
+.resume-screen-container .custom-text {
+    padding-left: 50px;
+}
+
 .resume-heading{
     display: flex;
     flex-direction: column;

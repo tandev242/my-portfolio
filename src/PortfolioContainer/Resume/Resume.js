@@ -3,6 +3,8 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Resume.css";
+import imgB from "../../../src/images/hình 21.jpg"
+import img2 from "../../../src/images/hình 22.jpg"
 
 const Resume = (props) => {
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0)
@@ -41,8 +43,8 @@ const Resume = (props) => {
     };
   
   const resumeBullets = [
-      { label: "Education", logoSrc: "education.svg" },
-      { label: "Work History", logoSrc: "work-history.svg" },
+      { label: "Tutor", logoSrc: "education.svg" },
+      { label: "Staff", logoSrc: "work-history.svg" },
       { label: "Programming Skills", logoSrc: "programming-skills.svg" },
       { label: "Application Skills", logoSrc: "programming-skills.svg" },
       { label: "Projects", logoSrc: "projects.svg" },
@@ -105,51 +107,18 @@ const Resume = (props) => {
   
   const resumeDetails = [
       <div className="resume-screen-container" key="education">
-        <ResumeHeading
-          heading={"University of Leeds, United Kingdom"}
-          subHeading={"MASTER of Exploration Geophysics"}
-          fromDate={"2014"}
-          toDate={"2015"}
-        />
-  
-        <ResumeHeading
-          heading={"Bandung Institute of Technology, Indonesia"}
-          subHeading={"BACHELOR of Physics"}
-          fromDate={"2008"}
-          toDate={"2013"}
-        />
+        <img src={imgB} />
+        <p className="custom-text">
+          I started this job in my freshman year, 2021-present, the reason I chose this job is because I love teaching and gaining experience, I am currently teaching an 8th grader in Maths, Physics,Chemistry and an 12th grader in English.
+        </p>
       </div>,
   
       /* WORK EXPERIENCE */
       <div className="resume-screen-container" key="work-experience">
-        <div className="experience-container">
-          <ResumeHeading
-            heading={"Saka Energi Indonesia"}
-            subHeading={"E&P Data Specialist"}
-            fromDate={"2019"}
-            toDate={"Present"}
-          />
-          <div className="experience-description">
-            <span className="resume-description-text">
-              Currently working as E&P Data Specialist handling E&P technical database and data integration development.
-            </span>
-          </div>
-          <div className="experience-description">
-            <span className="resume-description-text">
-              - Developed end-to-end data management system for G&G technical data using GIS Framework and
-              Application
-            </span>
-            <br />
-            <span className="resume-description-text">
-              - Developed API and real-time monitoring for production and facility data.
-            </span>
-            <br />
-            <span className="resume-description-text">
-              - Developed ETL tools to digitize multi-document format into semi-automated services and database.
-            </span>
-            <br />
-          </div>
-        </div>
+        <img src={img2} />
+        <p className="custom-text">
+          I did this job in the summer of my freshman year, (6-77/2022), then I stoppedstopped because of my school schedule.
+        </p>
       </div>,
   
       /* PROGRAMMING SKILLS */
@@ -259,7 +228,7 @@ const Resume = (props) => {
   return (
       <div className="resume-container screen-container fade-in" id={props.id || ""}>
           <div className="resume-content">
-              <ScreenHeading title={"Resume"} subHeading={"My formal Bio Details"} />
+              <ScreenHeading title={"Work experiences"} subHeading={"My formal Bio Details"} />
               <div className="resume-card">
                   <div className="resume-bullets">
                       <div className="bullet-container">
